@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+        <import type="haechan.gomok.model.Owner" />
         <variable
             name="record"
             type="haechan.gomok.model.Record" />
@@ -27,6 +28,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginStart="20dp"/>
 
+        <View
+            android:id="@+id/view_stone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@{record.owner == Owner.BLACK ? @drawable/shape_circle_000000_ffffff : @drawable/shape_circle_ffffff_000000}"
+            tools:background="@drawable/shape_circle_ffffff_000000"
+            app:layout_constraintStart_toEndOf="@id/textview_date_time"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="20dp"/>
+
         <TextView
             android:id="@+id/textview_winner"
             android:layout_width="wrap_content"
@@ -35,11 +47,11 @@
             tools:text="흑돌이 승리했습니다."
             android:textSize="14dp"
             android:textColor="@color/black"
-            android:layout_marginStart="20dp"
             android:paddingVertical="10dp"
-            app:layout_constraintStart_toEndOf="@id/textview_date_time"
+            app:layout_constraintStart_toEndOf="@id/view_stone"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="10dp"/>
 
         <View
             android:layout_width="match_parent"
