@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="haechan.gomok.model.Owner" />
+        <variable
+            name="mainViewModel"
+            type="haechan.gomok.game.presentation.GameViewModel" />
+
+        <variable
+            name="row"
+            type="Integer" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 0)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,0)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 1)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,1)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 2)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,2)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 3)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,3)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 4)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,4)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 5)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,5)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 6)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,6)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 7)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,7)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 8)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,8)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 9)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,9)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 10)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,10)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 11)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,11)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 12)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,12)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 13)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,13)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 14)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,14)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 15)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,15)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 16)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,16)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 17)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,17)}"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:background="@drawable/shape_rectangle_000000"
+            android:set_cell="@{mainViewModel.boardFlow.getCell(row, 18)}"
+            android:onClick="@{(_) -> mainViewModel.setPreview(row,18)}"/>
+    </LinearLayout>
+</layout>

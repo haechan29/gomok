@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="haechan.gomok.model.Owner" />
+        <variable
+            name="mainViewModel"
+            type="haechan.gomok.game.presentation.GameViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_board"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/progress_timer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{0}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{1}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{2}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{3}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{4}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{5}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{6}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{7}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{8}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{9}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{10}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{11}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{12}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{13}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{14}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{15}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{16}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{17}"
+                    app:mainViewModel="@{mainViewModel}"/>
+                <include
+                    layout="@layout/layout_board_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:row="@{18}"
+                    app:mainViewModel="@{mainViewModel}"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        
+        <ProgressBar
+            android:id="@+id/progress_timer"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progress="@{mainViewModel.timeCountProgressFlow}"
+            android:max="100"
+            android:backgroundTint="#66000000"
+            android:progressDrawable="@drawable/progress_ff0000_33000000"
+            app:layout_constraintBottom_toTopOf="@id/layout_bottom"
+            tools:progress="50"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/white">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_put"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="1:1"
+                android:text="착수"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_circle_000000_ffffff"
+                android:onClick="@{(_) -> mainViewModel.putStone()}"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginVertical="20dp"/>
+
+            <View
+                android:id="@+id/view_black"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/shape_circle_000000_ffffff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/text_view_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/view_black"
+                app:layout_constraintBottom_toBottomOf="@id/view_black"
+                app:layout_constraintStart_toEndOf="@id/view_black"
+                android:text="흑돌"
+                android:textSizeDp="@{mainViewModel.ownerFlow == Owner.BLACK ? 16F : 14F}"
+                android:textColor="@{mainViewModel.ownerFlow == Owner.BLACK ? @color/black : @color/grey}"
+                android:layout_marginStart="10dp"
+                tools:textSize="16dp"
+                tools:textColor="@color/black"/>
+
+            <View
+                android:id="@+id/view_white"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/shape_circle_ffffff_000000"
+                app:layout_constraintTop_toTopOf="@id/text_view_white"
+                app:layout_constraintBottom_toBottomOf="@id/text_view_white"
+                app:layout_constraintEnd_toStartOf="@id/text_view_white"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="백돌"
+                android:textSizeDp="@{mainViewModel.ownerFlow == Owner.WHITE ? 16F : 14F}"
+                android:textColor="@{mainViewModel.ownerFlow == Owner.WHITE ? @color/black : @color/grey}"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                tools:textSize="14dp"
+                tools:textColor="@color/grey"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

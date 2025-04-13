@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "haechan.gomok.datastore";
+option java_multiple_files = true;
+
+import "haechan/gomok/data/owner.proto";
+
+message StoneList {
+    repeated Stone stone = 1;
+}
+
+message Stone {
+    Owner owner = 1;
+    int32 row = 2;
+    int32 column = 3;
+}

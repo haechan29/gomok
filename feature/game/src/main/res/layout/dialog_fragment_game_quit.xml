@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@drawable/shape_rectangle_ffffff_radius_16">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현재 게임을 저장할까요?"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/divider_bottom_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/divider_bottom_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey"
+        app:layout_constraintBottom_toTopOf="@id/divider_bottom_vertical" />
+
+    <TextView
+        android:id="@+id/textview_negative"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="아니오"
+        android:textColor="@color/grey"
+        android:textSize="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/divider_bottom_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/divider_bottom_vertical" />
+
+    <TextView
+        android:id="@+id/textview_positive"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="네"
+        android:textColor="@color/blue"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/divider_bottom_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/divider_bottom_vertical"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/divider_bottom_vertical"
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+        android:background="@color/light_grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

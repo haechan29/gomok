@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="11">
+      <module name="Gomok.a" target="21" />
+      <module name="Gomok.core.domain" target="21" />
+      <module name="Gomok.core.mylibrary" target="21" />
+      <module name="Gomok.core.network" target="21" />
+      <module name="Gomok.core.presentation" target="21" />
+      <module name="Gomok.datastore-proto" target="21" />
+      <module name="Gomok.mylibrary" target="21" />
+      <module name="StudioProjects.Gomok.feature.main" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

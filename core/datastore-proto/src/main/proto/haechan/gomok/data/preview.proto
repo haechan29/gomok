@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "haechan.gomok.datastore";
+option java_multiple_files = true;
+
+message Preview {
+    int32 row = 1;
+    int32 column = 2;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "haechan.gomok.datastore";
+option java_multiple_files = true;
+
+message OwnerWrapper {
+    Owner owner = 1;
+}
+
+enum Owner {
+    NO_OWNER = 0;
+    BLACK = 1;
+    WHITE = 2;
+}
